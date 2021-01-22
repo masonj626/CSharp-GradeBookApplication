@@ -22,19 +22,19 @@ namespace GradeBook.GradeBooks
             var top20 = (int)Math.Ceiling(Students.Count * .2);
             var grades = Students.OrderByDescending(x => x.AverageGrade).Select(x => x.AverageGrade).ToList();
 
-            if(top20 >= grades[top20-1])
+            if(averageGrade >= grades[top20-1])
             {
                 return 'A';
             }
-            else if(top20 >= grades[(top20 * 2)-1])
+            else if(averageGrade >= grades[(top20 * 2)-1])
             {
                 return 'B';
             }
-            else if (top20 >= grades[(top20 * 3) - 1])
+            else if (averageGrade >= grades[(top20 * 3) - 1])
             {
                 return 'C';
             }
-            else if (top20 >= grades[(top20 * 4) - 1])
+            else if (averageGrade >= grades[(top20 * 4) - 1])
             {
                 return 'D';
             }
