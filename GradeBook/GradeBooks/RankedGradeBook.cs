@@ -10,5 +10,10 @@ namespace GradeBook.GradeBooks
         {
             Type = Enums.GradeBookType.Ranked;
         }
+
+        public virtual char GetLetterGrade(double averageGrade)
+        {
+
+        }
     }
 }
