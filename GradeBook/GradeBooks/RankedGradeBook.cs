@@ -16,8 +16,8 @@ namespace GradeBook.GradeBooks
             if(Students.Count < 5)
             {
                 throw InvalidOperationException;
-                return 'F';
             }
+            return 'F';
         }
     }
 }
